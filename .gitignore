@@ -1,0 +1,27 @@
+# General
+node_modules/
+dist/
+build/
+.DS_Store
+.env
+.env.local
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.iml
+
+# Node
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Java/Spring
+target/
+*.class
+*.jar
+*.war
+.gradle/
+build/

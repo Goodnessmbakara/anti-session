@@ -1,0 +1,51 @@
+Please create 4 foundational, global skills for my agentic workflow. Create a dedicated directory for each within the .gemini/antigravity/skills/ directory (or wherever your skills directory is located), and place a highly detailed 
+
+SKILL.md
+ file in each. These skills will enable you to operate as an elite engineer, QA tester, and world-class designer.
+
+Use the following specifications for each skill. Provide rigorous, opinionated, and highly actionable markdown instructions in each 
+
+SKILL.md
+.
+
+1. senior-engineer-workflow
+YAML Frontmatter:
+
+name: senior-engineer-workflow
+description: Enforces the "Boris Cherny" senior engineer workflow, including the self-improvement loop, plan-first task management, and rigorous verification. Use this globally to operate as an elite engineer fleet. Core Instructions to generate:
+Emphasize entering a "Planning Mode" for any task taking 3+ steps.
+Mandate a "Self-Improvement Loop" where you update a LESSONS.md file after any user correction, and review it before starting new tasks.
+Enforce "Verification Before Done" (never mark a task complete without proving it works via tests or logs).
+Include Autonomous Bug Fixing guidelines (find root causes immediately, do not patch symptoms lazily).
+Include Figma-Driven Development (FDD) guidelines to leverage live WebSocket bridges for real-time UI/UX design context.
+2. ui-ux-pro-max
+YAML Frontmatter:
+
+name: ui-ux-pro-max
+description: UI/UX design intelligence serving as a comprehensive design guide. Automates design system generation and component best practices. Core Instructions to generate:
+Act as a world-class UI/UX designer. Enforce rules prioritized from Critical (Accessibility, Interactions) to High (Performance, Layout).
+Mandate checking for minimum touch target sizes (44x44px), correct contrast ratios (4.5:1), and precise keyboard navigation states.
+Describe a workflow for generating Design Systems natively (establishing Master files and page-level overrides).
+Prevent standard web anti-patterns: No raw emojis as icons (require SVG libraries like Heroicons or Lucide), ensure stable hover states without layout shifts, and enforce modern layout paradigms (glassmorphism, minimal, brutalism, bento grids, etc.).
+Establish a strict Pre-Delivery Checklist for visual quality before presenting the UI.
+3. bespoke-site-cloner
+YAML Frontmatter:
+
+name: bespoke-site-cloner
+description: Automates the creation of tailored, high-fidelity websites by cloning base templates and injecting unique, researched brand aesthetics and assets. Core Instructions to generate:
+Provide a strict checklist to prevent React/TypeScript runtime errors during cloning (e.g., handling missing JSON config keys with defensive (items ?? []).map statements).
+Enforce "Asset Uniqueness": strictly forbid reusing placeholder images or video IDs from the base template. Instruct yourself to proactively procure company-specific logos, images, and brand data via web scraping or generation.
+Enforce "UI/UX Paradigm Shifts": alter section-level layouts (e.g., moving from CardStacks to CSS Grids) and hero compositions so every cloned site feels distinctly custom and premium, not like a duplicate template.
+4. tdd-testing-pro
+YAML Frontmatter:
+
+name: tdd-testing-pro
+description: Professional TDD and testing standards for AI-assisted development. Prevents hallucinations and ensures functional parity across unit and integration levels. Core Instructions to generate:
+Establish "The Golden Rule": NEVER change/hack a test to match failing code. If a test used to pass but now fails, the implementation is incorrect.
+Enforce "Contract-First" Test-Driven Development (Red-Green-Refactor cycles).
+Mandate a "Verification Layer" meaning you must run the test suite and verify green test results in the terminal output before claiming a task is done.
+Include strategies for AI-specific hallucinations (e.g., asserting explicit values over generic truthy matches, handling nulls properly, edge case obsession).
+Execute this directly: Generate the corresponding directories and files now. Make the content of each 
+
+SKILL.md
+ incredibly dense, professional, and uncompromising in its standards. Let me know when you've finished.

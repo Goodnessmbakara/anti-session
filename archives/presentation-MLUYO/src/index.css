@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap');
+
+:root {
+  --primary: #FF6B00;
+  --secondary: #000000;
+  --text: #000000;
+  --bg: #FFFFFF;
+  --grid-color: rgba(0, 0, 0, 0.03);
+  --font-main: 'Outfit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  line-height: 1.4;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: 
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
+.slide-container {
+  width: 90%;
+  max-width: 1300px;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.heading-xl {
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  color: var(--secondary);
+}
+
+.heading-l {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.text-accent {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.4em 0.8em;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-bottom: 3.5rem;
+  align-self: flex-start;
+  letter-spacing: 0.05em;
+}
+
+.progress-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+
+.controls {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+  z-index: 100;
+}
+
+.btn-nav {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.btn-nav:hover {
+  background: var(--primary);
+  transform: scale(1.1);
+}
+
+.logo-container {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-m {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.logo-subtext {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 600;
+}
+
+/* Bullet list cleanup */
+ul {
+  list-style: none;
+}
+
+.slide-content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
