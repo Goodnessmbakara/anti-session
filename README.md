@@ -6,12 +6,11 @@ FreshPress is a modern web application consisting of a React-based frontend and 
 
 - **`freshpress-web/`**: The frontend application built with React and Vite.
 - **`freshpress-api/`**: The backend application built with Java and Spring Boot.
-- **`presentation/`**: Presentation materials and UI prototype.
-- **`archives/`**: Archived items and reference materials.
+- **`archives/presentation-MLUYO/`**: Interactive UI prototype and presentation materials regarding the core value proposition of FreshPress. Built with React, Vite, Framer Motion, and GSAP.
 
 ## Prerequisites
 
-- Node.js (for the frontend)
+- Node.js (for the frontend and presentation app)
 - Java 17+ (for the backend)
 - Maven (included via Maven Wrapper `mvnw` in the backend directory)
 
@@ -39,6 +38,18 @@ npm run dev
 ```
 
 The frontend will be accessible at `http://localhost:5173`.
+
+### 3. Running the Presentation Prototype (React)
+
+There is also an interactive UI prototype in the archives, showcasing the core value offering:
+
+```bash
+cd archives/presentation-MLUYO
+npm install
+npm run dev
+```
+
+The presentation will be accessible at `http://localhost:5173`.
 
 ## Additional Commands
 
